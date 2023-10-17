@@ -17,4 +17,4 @@ void fkread_command(char *command, size_t size);
 void exec_command(char *command);
 void disp_prompt(void);
 
-#endif /** SHELL_H */
+#endif

@@ -1,3 +1,5 @@
+#include "shell.h"
+
 void exec_command(char *command)
 {
 	char *args[2];
