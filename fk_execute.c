@@ -14,7 +14,7 @@ void exec_command(char *command)
 	{
 		char full_path[350];
 
-		strcpy(full_path, "/bin/");
+		strcpy(full_path, "/bin/ls");
 
 		strcat(full_path, command);
 
