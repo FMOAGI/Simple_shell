@@ -2,18 +2,14 @@
 #include <string.h>
 
 /**
- * demonstrates how to break down a string into tokens
+ * Description:
+ * demonstrates how to break down a string into tokens using strtok function
  * main - entry point
- * fk_print: functions as printf
- * @message: string to print
- * @token_str:string to tokenize
  * Return: Always 0 (Success)
  */
 
 void fk_print(const char *message);
-
-int token_str(void)
-
+int token_str()
 {
 	char command[] = "this.is.our.shell";
 	char *tokens;
@@ -21,7 +17,7 @@ int token_str(void)
 	tokens = strtok(command, delimiter);
 	while (tokens != NULL)
 	{
-		fk_print("Token: %s\n", tokens);
+		fk_print("Token: %s\n");
 		tokens = strtok(NULL, delimiter);
 	}
 	return (0);
