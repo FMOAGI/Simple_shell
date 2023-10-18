@@ -1,5 +1,11 @@
 #include "shell.h"
 
+/**
+ * exec_command - Execute a command using execve.
+ * @command: The full path to the command to execute.
+ */
+
+
 void exec_command(char *command)
 {
 	char *args[2];
@@ -14,7 +20,7 @@ void exec_command(char *command)
 	{
 		char full_path[350];
 
-		strcpy(full_path, "/bin/ls");
+		strcpy(full_path, "/bin/");
 
 		strcat(full_path, command);
 
